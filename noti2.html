@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notifications Page</title>
+  <link rel="stylesheet" href="styles1.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <style>
+    .top-bar {
+      background-color: #2d3436;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .notifications-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .notifications-header .title-section {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .bb {
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: whitesmoke;
+    }
+
+    .bb:hover {
+      color: #8adc32;
+    }
+
+    .notifications-header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <h1>ConnectGram</h1>
+  </div>
+
+  <div class="container">
+    <header class="notifications-header">
+      <div class="title-section">
+        <a href="navi3.html" class="bb"><i class="bi bi-arrow-left-circle-fill"></i></a>
+        <h1>Notifications <span id="unread-count" class="badge">3</span></h1>
+      </div>
+      <button id="mark-all" class="btn">Mark all as read</button>
+    </header>
+
+    <ul class="notifications">
+      <li class="notification unread">
+        <img src="https://plus.unsplash.com/premium_photo-1664475546048-b1e3768d2b14?w=500&auto=format&fit=crop&q=60" width="50" height="50" alt="Profile" class="avatar">
+        <div class="content">
+          <p><strong>NEHA</strong>liked your recent post <strong>My First Project</strong></p>
+          <span class="time">1sec ago</span>
+        </div>
+      </li>
+
+      <li class="notification unread">
+        <img src="https://s3.ap-south-1.amazonaws.com/si-prod-user-images/jagannadh_nsk-1750597104645.png" width="50" height="50" alt="Profile" class="avatar">
+        <div class="content">
+          <p><strong>JAGGU</strong> Commented on your post <strong>The Beginning </strong></p>
+          <span class="time">10m ago</span>
+        </div>
+      </li>
+
+      <li class="notification unread">
+        <img src="https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?w=500&auto=format&fit=crop&q=60" alt="Profile" width="50" height="50" class="avatar">
+        <div class="content">
+          <p><strong>GOWTHAM</strong> reacted to the story</p>
+          <span class="time">1h ago</span>
+        </div>
+      </li>
+
+      <li class="notification">
+        <img src="https://www.cinejosh.com/newsimg/newsmainimg/prabhas-salar-registers-very-little-trp_b_0305240607.jpg" alt="Profile" width="50" height="50" class="avatar">
+        <div class="content">
+          <p><strong>PRANAV</strong> joined the group <strong>movie club</strong></p>
+          <span class="time">1d ago</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>
